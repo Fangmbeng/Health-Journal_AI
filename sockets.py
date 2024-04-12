@@ -5,7 +5,7 @@ import logging
 from flask import Flask, render_template
 from flask_sock import Sock
 from twilio.rest import Client
-from twilio.twiml.voice_response import VoiceResponse, Say, Gather
+from twilio.twiml.voice_response import VoiceResponse
 from langchain_google_genai import ChatGoogleGenerativeAI
 from transcription import SpeechClientBridge
 from google.cloud.speech import RecognitionConfig, StreamingRecognitionConfig
